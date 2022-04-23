@@ -1,0 +1,21 @@
+	//lettura pipe 0 scrittura pipe 1
+	// pipe restituisce 0 se va tutto bene, < 0 se fallisce
+	//close per chiudere lato di pipe non usata
+	//int pipe(int fd[])
+	//read bloccante cioè attende fino a quando non ci sono dati disponibili se è vuota
+	//write pure se pipe piena, ed è bloccante fino a quando non c'è spazio sufficiente per scrivere
+	//fd1 = dup(fd) crea una copia dell'elemento della tabella dei file aperti di indice fd
+	//copia messa nella prima posizione libera
+	//assegna a fd l'indice della nuova copia, -1 in caso di errore
+	
+	/*
+	ridirigere outpput su lato scrittura pipe
+	close(1) cioe lo standard output
+	dup(fd_out) cioe copia l'elemento fd nella tabella dei file aperti nel primo
+	posto disponibile, che sara 1
+	close(fd_out)
+	
+	questo significa praticamente sovrascrivere lo stdout
+	ora il processo può eseguire grep e riversa l'output nella pipe
+	
+	*/
