@@ -24,3 +24,12 @@ Examples of system calls used:
 * exit();
 * write();
 * read();
+
+To create the C source code
+```
+gcc filename.c -o filename
+```
+To run the C code
+```
+./filename arguments...
+```
