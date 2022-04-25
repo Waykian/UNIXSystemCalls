@@ -1,0 +1,5 @@
+fifoClient
+fifoClient.c
+fifoServ
+fifoServ.c
+FIFOutput.txt
