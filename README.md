@@ -1,5 +1,7 @@
 # System calls in UNIX
-Projects containing the use of system calls in UNIX, entirely written in C. Creation of children, pipes, directories, FIFOs, etc.
+Project regarding system calls in UNIX for the "Operating Systems" course of the University of Bologna.
+Implementation of pipes, directories, FIFO, files, creation of children from main process, etc.
+Entirely written in C on a Kali Linux virtual machine (VirtualBox), and GCC compiler.
 
 Headers:
 * #include <sys/types.h>
