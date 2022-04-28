@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ $# -ne 1 ]; then echo Sintassi errata; exit; fi
 echo Inserisci il nome assoluto di un file
 read F

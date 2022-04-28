@@ -1,9 +1,11 @@
 #!/bin/bash
+
 if [ $# -lt 3 ]; then echo Sintassi errata; exit; fi
 if ! [[ $2 =~ ^-?[0-9]+$ ]]; then echo Il secondo argomento deve essere un numero; exit; fi
 STRING=$1
 NUM=$2
 TOT=0
+
 shift
 shift
 
